@@ -39,6 +39,21 @@
 extern char **environ;
 
 
+/**
+ * struct liststr - the single of the linked list
+ * @num: the field number
+ *
+ * @str: the string
+ * @next: the points of the next node
+ *
+ */
+
+typedef struct liststr
+{
+	int num;
+	char *str;
+	struct liststr *next;
+} list_t;
 
 /**
  *
@@ -98,23 +113,6 @@ typedef struct passinfo
 {NULL, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL, NULL, 0, 0, NULL, \
 		0, 0, 0}
 
-
-
-/**
- * struct liststr - the single of the linked list
- * @num: the field number
- *
- * @str: the string
- * @next: the points of the next node
- *
- */
-
-typedef struct liststr
-{
-	int num;
-	char *str;
-	struct liststr *next;
-} list_t;
 
 
 
@@ -286,5 +284,3 @@ void free_list( list_t ** );
 
 
 #endif
-
-

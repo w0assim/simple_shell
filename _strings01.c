@@ -91,7 +91,7 @@ char *_strdup( const char *str )
 	int length = 0;
 	char *ret;
 
-	if ( str == NUL)
+	if ( str == NULL )
 		return (NULL);
 	while ( *str++ )
 		length++;
@@ -102,4 +102,3 @@ char *_strdup( const char *str )
 		ret[length] = *--str;
 	return (ret);
 }
-
