@@ -1,11 +1,10 @@
 #include "shell.h"
 
 /**
- ** _strchr - The locate of a character in a string
- * @s: string should be parsed
- * @c: character which look for it
- * Return: (s) the pointer of the memory area s
- *
+ **_strchr - The locate of a character in a string
+ *@s: string should be parsed
+ *@c: character which look for it
+ *Return: (s) the pointer of the memory area s
  */
 
 char *_strchr(char *s, char c)
@@ -19,12 +18,11 @@ char *_strchr(char *s, char c)
 }
 
 /**
- ** _strncpy - the copie of string
- * @dest: the destination string should be copied
- * @src: the source of string
- * @n: the amount of characters should be copied
- * Return: the concatenated of string
- *
+ **_strncpy - the copie of string
+ *@dest: the destination string should be copied
+ *@src: the source of string
+ *@n: the amount of characters should be copied
+ *Return: the concatenated of string
  */
 
 char *_strncpy(char *dest, char *src, int n)
@@ -51,12 +49,11 @@ char *_strncpy(char *dest, char *src, int n)
 }
 
 /**
- ** _strncat - concatenates of two strings
- * @dest: first string
- * @src: second string
- * @n: the amount of a bytes should be maximally used
- * Return: the concatenated strings
- *
+ **_strncat - concatenates of two strings
+ *@dest: first string
+ *@src: second string
+ *@n: the amount of a bytes should be maximally used
+ *Return: the concatenated strings
  */
 
 char *_strncat(char *dest, char *src, int n)
