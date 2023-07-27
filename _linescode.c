@@ -1,10 +1,8 @@
 #include "shell.h"
 
 /**
- *
  * sigintHandler - should block the ctrl-C
  * @sig_num: the number's signal
- *
  * Return: the void
  *
  */
@@ -17,13 +15,10 @@ void sigintHandler( __attribute__(( unused )) int sig_num )
 }
 
 /**
- *
  * read_buf - reads the buffer
  * @info: the parameter struct
- *
  * @buf: the buffer
  * @i: the size
- *
  * Return: r
  *
  */
@@ -42,13 +37,10 @@ ssize_t read_buf( info_t *info, char *buf, size_t *i )
 
 
 /**
- *
  * input_buf - the chaine of a buffers commands
  * @info: the parameters struct
- *
  * @buf: the beffer address 
  * @len: the len var address
- *
  * Return: bytes read
  *
  */
@@ -89,10 +81,8 @@ ssize_t input_buf( info_t *info, char **buf, size_t *len )
 
 
 /**
- *
  * get_input - gets a line minus of the newline
  * @info: the parameter struct
- *
  * Return: bytes read
  *
  */
@@ -140,13 +130,10 @@ ssize_t get_input( info_t *info )
 
 
 /**
- *
  * _getline - have the next line of the input from the STDIN
  * @info: the parameter struct
- *
  * @ptr: the pointer address of buffer, should be preallocated or be NULL
  * @length: size of the preallocated if the pointer buffer is not NULL
- *
  * Return: s
  *
  */
@@ -189,6 +176,3 @@ int _getline( info_t *info, char **ptr, size_t *length )
 	*ptr = p;
 	return (s);
 }
-
-
-
