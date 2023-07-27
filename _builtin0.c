@@ -1,10 +1,8 @@
 #include "shell.h"
 
 /**
- *
  * _myhelp - the process of the current directory will changes
  * @info: Structure containing potential arguments
- *
  * the constant function prototype.
  * Return: git the 0
  *
@@ -22,12 +20,9 @@ int _myhelp( info_t *info )
 
 
 /**
- *
  * _mycd - the process of the current directory will changes
  * @info: Structure containing potential arguments.
- *
  * the constant function prototype.
- *
  * Return: give the 0
  */
 int _mycd( info_t *info )
@@ -76,12 +71,9 @@ int _mycd( info_t *info )
 
 
 /**
- *
  * _myexit - to be exits in the shell
  * @info: Structure containing potential arguments.
- *
  * the constant function prototype.
-
  * Return: If the exits it gives exit status
  * (0) if info.argv[0] != "exit"
  *

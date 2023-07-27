@@ -1,15 +1,11 @@
 #include "shell.h"
 
 /**
- *
  * _setenv - the modification of an existing environment variable or Initialization a new one
- *
  * @info: Structure of the  potential arguments
  * the constant function prototype.
- *
  * @var: the string of a environment variable property
  * @value: the value string
- *
  * Return: the 0
  *
  */
@@ -50,10 +46,8 @@ int _setenv( info_t *info, char *var, char *value )
 
 
 /**
- *
  * get_environ - the return of the array's string copy of the environ
  * @info: Structure of the potential arguments
- *
  * the constant function prototype.
  * Return: the 0
  *
@@ -71,15 +65,11 @@ char **get_environ( info_t *info )
 }
 
 /**
- *
  * _unsetenv - delete the environment variable
  * @info: Structure of the potential arguments
- * 
- * the constant function prototype
- *  Return: if it's 1 should delete it , if it's not 0
- *
  * @var: the environment variable's string property
- *
+ * the constant function prototype
+ * Return: if it's 1 should delete it , if it's not 0
  */
 
 int _unsetenv( info_t *info, char *var )

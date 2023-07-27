@@ -2,7 +2,6 @@
 
 
 /**
- *
  * print_alias - prints an alias string
  * @node: the alias node
  *
@@ -29,7 +28,6 @@ int print_alias( list_t *node )
 
 
 /**
- *
  * unset_alias -  the string of a stes alias
  * @info: parameter struct
  *
@@ -48,13 +46,13 @@ int unset_alias( info_t *info, char *str )
 		return (1);
 	c = *p;
 	*p = 0;
-	ret = delete_node_at_index( &( info->alias ), get_node_index( info->alias, node_starts_with( info->alias, str, -1 ) ) );
+	ret = delete_node_at_index( &( info->alias ),
+		get_node_index( info->alias, node_starts_with( info->alias, str, -1 ) ) );
 	*p = c;
 	return (ret);
 }
 
 /**
- *
  * set_alias - the string of the sets alias
  * @info: parameter struct
  *
@@ -78,11 +76,8 @@ int set_alias( info_t *info, char *str )
 }
 
 /**
- *
  * _myalias - the alias builtin
  * @info: Structure of a potential arguments.
- *
- * 
  * Return: the 0
  *The constant function prototype.
  */
@@ -118,8 +113,8 @@ int _myalias( info_t *info )
 
 
 /**
- *
- * _myhistory - displays the history list gives 1 command by line, preceded with line numbers it starting at 0.
+ * _myhistory - displays the history list gives 1 command by line,
+ *  preceded with line numbers it starting at 0.
  *
  * @info: Structure containing potential arguments.
  * The constant function prototype.
