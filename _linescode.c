@@ -49,6 +49,7 @@ ssize_t input_buf(info_t *info, char **buf, size_t *len)
 
 	if (!*len)
 	{
+		free(*buf);
 		*buf = NULL;
 		signal(SIGINT, sigintHandler);
 #if USE_GETLINE
